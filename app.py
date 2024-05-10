@@ -13,15 +13,15 @@ inbox = []
 spam = []
 
 # Load the tokenizer
-with open(r"data\tokenizer.pickle", "rb") as handle:
+with open(r"data/tokenizer.pickle", "rb") as handle:
     tokenizer = pickle.load(handle)
 
 # Load the threshold
-with open(r"data\threshold.pickle", "rb") as handle:
+with open(r"data/threshold.pickle", "rb") as handle:
     threshold = pickle.load(handle)
 
 # Load the stopwords
-with open(r"data\stopwords.pickle", "rb") as handle:
+with open(r"data/stopwords.pickle", "rb") as handle:
     stop_words = pickle.load(handle)
 
 # Load the model
