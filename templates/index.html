@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpamNOSpam</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>SpamNOSpam</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="email-form">
+                <h2>Email Form</h2>
+                <form action="/send_email" method="POST">
+                    <textarea name="email_content" rows="4" placeholder="Type your email here..."></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="email-lists">
+                <div class="inbox-list">
+                    <h2>Inbox</h2>
+                    <ul>
+                        {% for email in inbox %}
+                            <li>{{ email }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="spam-list">
+                    <h2>Spam</h2>
+                    <ul>
+                        {% for email in spam %}
+                            <li>{{ email }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
