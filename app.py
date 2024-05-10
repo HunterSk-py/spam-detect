@@ -6,10 +6,10 @@ import numpy as np
 import pickle
 import string
 from nltk.stem import WordNetLemmatizer
-import nltk
+
 app = Flask(__name__)
 
-nltk.download()
+
 
 # Placeholder lists for inbox and spam emails
 inbox = []
