@@ -8,6 +8,8 @@ import string
 from nltk.stem import WordNetLemmatizer
 app = Flask(__name__)
 
+nltk.download()
+
 # Placeholder lists for inbox and spam emails
 inbox = []
 spam = []
