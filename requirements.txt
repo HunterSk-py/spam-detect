@@ -2,7 +2,6 @@ Flask
 Gunicorn
 tensorflow
 numpy
-string
 nltk
 pickle
 pandas
