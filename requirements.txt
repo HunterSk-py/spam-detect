@@ -1,9 +1,4 @@
 Flask
-Gunicorn
-tensorflow.keras.models
-tensorflow.keras.preprocessing.sequence
-numpy
-string
-nltk.stem
-pickle
-pip
+tensorflow
+nltk
+gunicorn
